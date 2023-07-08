@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Similarity Checker</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Document Similarity Checker</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="file1">Select File 1:</label>
+        <input type="file" name="file1" id="file1" accept=".txt">
+        <br>
+        <label for="file2">Select File 2:</label>
+        <input type="file" name="file2" id="file2" accept=".txt">
+        <br>
+        <button type="submit">Check Similarity</button>
+    </form>
+</body>
+</html>
